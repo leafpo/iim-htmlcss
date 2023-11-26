@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin: 10px;
+  padding: 20px;
+  background-color: lightblue;
+  text-align: center;
+}
+
+.pixel {
+  width: 100px;
+}
+
+.pourcentage {
+  width: 50%;
+}
+
+.viewport-vh {
+  height: 50vh;
+}
+
+.viewport-vw {
+  width: 50vw;
+}
+
+.em {
+  font-size: 2em;
+}
+
+.rem {
+  font-size: 2rem;
+}

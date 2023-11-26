@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemples de Positionnement CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../markdown.css" />
+    <script src="//cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="../readme.js" defer></script>
+  </head>
+  <body>
+    <!-- Exemple de Position Relative -->
+    <div class="relative-container">
+      <h2>Position Relative</h2>
+      <div class="relative-box">Box Relative</div>
+    </div>
+
+    <!-- Exemple de Position Absolute -->
+    <div class="absolute-container">
+      <h2>Position Absolute</h2>
+      <div class="absolute-box">Box Absolute</div>
+    </div>
+
+    <!-- Exemple Absolute dans un conteneur Relative -->
+    <div class="relative-container">
+      <h2>Absolute dans Relative</h2>
+      <div class="relative-box">
+        Box Relative
+        <div class="absolute-box">Box Absolute dans Relative</div>
+      </div>
+    </div>
+
+    <!-- Position Fixed -->
+    <h2>
+      Position Fixed (<span class="lightgreen">green box</span> en bas à gauche)
+    </h2>
+    <div class="fixed-box">Box Fixed</div>
+
+    <!-- Position Sticky -->
+    <h2>Position Sticky</h2>
+    <div class="sticky-container">
+      <div class="sticky-box">Box Sticky</div>
+      <p>Contenu pour démontrer le sticky. Continuez à défiler...</p>
+      <!-- Beaucoup de contenu pour démontrer l'effet sticky -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      <!-- Répéter le contenu ou utiliser une grande quantité de texte pour assurer le défilement -->
+      <p>Plus de contenu...</p>
+      <!-- Ajoutez autant de paragraphes que nécessaire pour un bon défilement -->
+      <p>Encore plus de contenu...</p>
+      <p>Et encore...</p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum iure
+        iste, ipsa hic praesentium inventore commodi assumenda dicta beatae
+        fugit asperiores et odit nostrum aspernatur voluptates ullam magni
+        obcaecati. Tenetur. Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Beatae eum voluptatum cumque in repellendus officiis, ullam
+        laudantium ex amet quia ut quisquam sapiente aliquid possimus culpa
+        saepe molestias? Earum, natus. Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Consequatur quas eligendi libero veniam laboriosam
+        saepe maiores, id neque ab ipsam vel eius pariatur porro. Quis at
+        delectus quod reprehenderit nostrum? Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Asperiores soluta accusantium aperiam
+        dignissimos illo eum repudiandae sint ad. Quaerat at blanditiis corrupti
+        exercitationem aliquam veniam maxime fugit officia autem itaque.
+      </p>
+      <!-- Plus de contenu pour le défilement -->
+    </div>
+    <h2>Fin du Sticky</h2>
+  </body>
+</html>

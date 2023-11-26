@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header,
+nav,
+footer {
+  background-color: lightgray;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  margin: 10px;
+}
+
+section,
+article,
+aside {
+  margin-bottom: 10px;
+}
+
+/* Ajoutez ici plus de styles pour embellir et différencier les sections */
