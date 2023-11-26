@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.exemple {
+  color: black;
+  background-color: lightgrey;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+/* Exemple de media query pour les écrans de moins de 600px */
+@media screen and (max-width: 600px) {
+  .exemple {
+    background-color: lightblue;
+  }
+}
+
+/* Exemple de media query pour les écrans entre 600px et 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .exemple {
+    background-color: lightgreen;
+  }
+}
+
+/* Exemple de media query pour les écrans de plus de 900px */
+@media screen and (min-width: 901px) {
+  .exemple {
+    background-color: lightcoral;
+  }
+}
+
+.carre {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.rouge {
+  background-color: red;
+}
+.vert {
+  background-color: green;
+}
+.bleu {
+  background-color: blue;
+}
+.jaune {
+  background-color: yellow;
+}
+.violet {
+  background-color: purple;
+}
+
+/* Exemple pour changer la taille des carrés sur les grands écrans */
+@media screen and (min-width: 1000px) {
+  .carre {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Exemple pour aligner les carrés en colonne sur les petits écrans */
+@media screen and (max-width: 500px) {
+  .carre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Exemple pour changer l'opacité des carrés sur des écrans intermédiaires */
+@media screen and (min-width: 501px) and (max-width: 999px) {
+  .carre {
+    opacity: 0.5;
+  }
+}

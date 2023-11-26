@@ -34,3 +34,16 @@ div {
 .rem {
   font-size: 2rem;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Répartition de l'espace en fractions */
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: lightblue;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+}

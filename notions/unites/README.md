@@ -31,3 +31,10 @@ Ce guide explique les différentes unités de taille utilisées en CSS, démontr
 
 - Relatif à la taille de police de l'élément racine (`html`).
 - Permet une cohérence dans l'espacement et la taille du texte.
+
+## Fractions (`fr`)
+
+- Utilisée exclusivement dans le contexte des grilles CSS (`grid`).
+- Représente une fraction de l'espace disponible dans un conteneur de grille.
+- Permet de créer des colonnes et des lignes flexibles, où l'espace est réparti proportionnellement en fonction du nombre de fractions assignées.
+- Peut être combinée avec d'autres unités pour des mises en page complexes et réactives.

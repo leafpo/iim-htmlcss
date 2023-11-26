@@ -1,0 +1,80 @@
+.bloc {
+  display: block;
+  background-color: lightblue;
+  margin: 10px;
+  padding: 10px;
+}
+
+.inline {
+  display: inline;
+  background-color: lightgreen;
+  border: 1px solid black;
+  width: 200px; /* Tentative de définir une largeur */
+  height: 100px; /* Tentative de définir une hauteur */
+  margin: 10px;
+  padding: 10px;
+}
+
+.inline-block {
+  display: inline-block;
+  background-color: lightcoral;
+  border: 1px solid black;
+  width: 200px; /* Définition d'une largeur */
+  height: 100px; /* Définition d'une hauteur */
+  margin: 10px;
+  padding: 10px;
+}
+
+.none {
+  display: none;
+  background-color: lightgrey;
+  margin: 10px;
+  padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+.flex-item {
+  background-color: lightcoral;
+  margin: 10px;
+  padding: 20px;
+  flex: 1; /* Égalise la largeur des éléments flex */
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+/* Grid layout pour les écrans plus larges */
+@media screen and (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 3 colonnes de largeur égale, l'unité fr (fraction) est utilisé uniquement pour les grids */
+  }
+}
+
+/* Grid layout pour les écrans plus petits */
+@media screen and (max-width: 599px) {
+  .grid-media-queries {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 colonnes de largeur égale, l'unité fr (fraction) est utilisé uniquement pour les grids */
+  }
+}
