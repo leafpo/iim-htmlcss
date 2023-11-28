@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.example {
+  margin-bottom: 20px;
+}
+
+.hover-example {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.hover-example:hover {
+  background-color: #009688;
+  color: white;
+}
+
+.active-example {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.active-example:active {
+  background-color: #ff5722;
+  color: white;
+}
+
+.focus-example {
+  padding: 5px;
+  border: 2px solid #f0f0f0;
+  transition: border-color 0.3s ease;
+}
+
+.focus-example:focus {
+  border-color: #4caf50;
+}
+
+.checked-example {
+  accent-color: #4caf50;
+}
+
+.hover-scale-example {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.hover-scale-example:hover {
+  transform: scale(1.1);
+}
+
+@keyframes moving-animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animation-example {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  animation: moving-animation 2s infinite;
+}
+
+@keyframes pokemon-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pokemon-animation img {
+  display: block;
+  margin: auto;
+  width: 100px;
+  animation: pokemon-spin 6s infinite linear;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemples de Sélecteurs Avancés CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../navbar.css" />
+    <link rel="stylesheet" href="../markdown.css" />
+    <script src="//cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="../script.js" defer></script>
+  </head>
+  <body>
+    <h1>Exemples de Sélecteurs Avancés en CSS</h1>
+
+    <section class="example">
+      <h2>Sélecteur d'enfant direct (>)</h2>
+      <p>
+        Sélectionne tous les éléments qui sont des enfants directs d'un élément
+        spécifié.
+      </p>
+      <div class="parent">
+        <div class="child">Enfant direct</div>
+        <div>Non ciblé</div>
+      </div>
+    </section>
+
+    <section class="example">
+      <h2>Sélecteur d'adjacence (+)</h2>
+      <p>
+        Sélectionne l'élément immédiatement après un autre élément spécifié,
+        dans la même hiérarchie.
+      </p>
+      <div class="adjacency">
+        <div class="target">Cible</div>
+        <div class="adjacent">Adjacent à la cible</div>
+        <div>Non adjacent</div>
+      </div>
+    </section>
+
+    <section class="example">
+      <h2>Sélecteur d'attribut</h2>
+      <p>Sélectionne les éléments basés sur un attribut et sa valeur.</p>
+      <input type="text" placeholder="Champ texte" class="input-example" />
+      <input type="password" placeholder="Champ mot de passe" />
+    </section>
+
+    <section class="example">
+      <h2>Sélecteur pseudo-classe :nth-child()</h2>
+      <p>
+        Sélectionne un élément en fonction de son ordre dans ses frères et
+        sœurs.
+      </p>
+      <ul class="list">
+        <li>Premier enfant</li>
+        <li>Deuxième enfant</li>
+        <li>Troisième enfant</li>
+      </ul>
+    </section>
+
+    <section class="example">
+      <h2>Sélecteur Universel (*)</h2>
+      <p>Applique un style à tous les éléments de la page.</p>
+      <div class="universal-example">Tous les éléments sont ciblés</div>
+    </section>
+
+    <section class="example">
+      <h2>Sélecteur de Descendant (espace)</h2>
+      <p>
+        Sélectionne tous les descendants d'un élément spécifié, peu importe leur
+        niveau de profondeur.
+      </p>
+      <div class="descendant-example">
+        <div class="child">Enfant</div>
+        <div class="child">Enfant avec <span>descendant</span></div>
+      </div>
+    </section>
+
+    <section class="example">
+      <h2>Sélecteur d'élément de liste :nth-of-type()</h2>
+      <p>
+        Sélectionne un élément spécifique d'un type donné parmi ses frères et
+        sœurs.
+      </p>
+      <ul class="nth-of-type-example">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </section>
+
+    <section class="example">
+      <h2>Sélecteur Pseudo-Classe :not()</h2>
+      <p>Exclut certains éléments du style défini.</p>
+      <div class="not-example">
+        <div class="box">Box 1</div>
+        <div class="box special">Box 2 (exclue)</div>
+        <div class="box">Box 3</div>
+      </div>
+    </section>
+  </body>
+</html>
